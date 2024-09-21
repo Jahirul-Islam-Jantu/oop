@@ -1,6 +1,7 @@
-    // Object creating with Object instance
 
- /*   let person =new Object();
+ /*
+    // Object creating with Object instance
+    let person =new Object();
     person.first_name = 'Jahirul';
     person.last_name = 'Islam';
     person.age = 32;
@@ -13,9 +14,10 @@
 
     console.log(person.addTwo()) */
 
-    // creating class (_BluePrint of an Object)
 
-/*    class Person  {
+/*
+    // creating class (_BluePrint of an Object)
+    class Person  {
         first_name = 'Jahirul'
         last_name = 'Islam'
         age = 32
@@ -30,8 +32,8 @@
     const Person1 = new Person()
     console.log(Person1)
 */
-    // class constructor
     /*
+    // class constructor
     class Person {
         constructor() {
             // Constructor is a default method
@@ -43,3 +45,54 @@
     }
     const Person1 = new Person()
 */
+
+/*
+  // Constructor receive property
+  class Add {
+        constructor(a, b) {
+            const sum = a+b
+            console.log(sum)
+
+        }
+
+    }
+    const result = new Add(10, 30)
+
+ */
+/*
+ // Change Parameter with Constructor Method
+
+
+ class Person {
+     num1 = 100
+     num2 = 80
+     addTwo(){
+         return this.num1+this.num2
+     }
+     constructor(a, b) {
+         this.num1 = a
+         this.num2 = b
+     }
+ }
+
+ const person = new Person(222, 333)
+ console.log(person.addTwo())
+
+ */
+
+ // Getter and Setter Method
+/*
+ class Product {
+     set setPrice(value){
+         this.price = value
+     }
+     get getPrice (){
+         return this.price
+     }
+ }
+ let product = new Product()
+ product.setPrice = 1000
+
+ console.log(product.getPrice)
+
+ */
