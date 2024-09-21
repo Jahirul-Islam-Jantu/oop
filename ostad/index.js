@@ -96,3 +96,26 @@
  console.log(product.getPrice)
 
  */
+
+
+ /**
+ // Static method gives us the power to access properties from a class without creating an Object
+ // why to use static method?
+  * Shared Properties (we have a class with a lot of properties inside it, we need any single of it )
+  * Utility Method ( from validation, data validation, any kind of utility function we build inside a class. we don't need all of this at the same time, that's why we need to try static method to use with single method every time. )
+  * Memory Efficiency (Performance advantages)
+
+
+
+
+ class Person{
+     static first_name ="Jahir"
+     static last_name = "Islam"
+     getName(){
+            return `My Name is ${this.first_name} ${this.last_name}`
+     }
+ }
+
+ console.log(Person.first_name + Person.last_name)
+
+  */
