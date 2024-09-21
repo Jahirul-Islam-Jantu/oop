@@ -119,3 +119,24 @@
  console.log(Person.first_name + Person.last_name)
 
   */
+
+ // Inheritance
+ /*
+    Inheritance helps us to access a class with another class
+  */
+ /*
+ class Father {
+     num1 = 33
+     num2 = 55
+     addTwo (){
+         let sum = this.num1 + this.num2
+         return sum
+     }
+ }
+ class Son extends Father {
+
+ }
+
+ const son = new Son()
+ console.log(son.addTwo())
+  */
