@@ -140,3 +140,37 @@
  const son = new Son()
  console.log(son.addTwo())
   */
+
+ // Inheritance constructor
+ // constructor only in parent class
+ // constructor only in parent class and pass parameter
+
+ // constructor only in child class
+ // constructor only in child class and pass parameter
+
+ // constructor in both parent and child class
+ // constructor in both class and pass parameter
+
+ // Inheritance Static
+
+ // OverRiding
+
+ // Encapsulation
+
+ function createCount(){
+     let count = 0;
+     const increament = (count)=>{
+         return count++;
+     }
+     const decreament = (count)=>{
+         return count--;
+     }
+     const getCount = (count)=>{
+         return count;
+     }
+     return{
+         increament,
+         decreament,
+         getCount
+     }
+ }
