@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./bootstrap/bootstrap.bundle.js" defer></script>
+    <script src="./main.js" defer></script>
+    <title>Students Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">Students Registration System</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Register Student</a>
+                                </li>
+
+                            </ul>
+                            <span class="navbar-text"><a class="nav-link" href="allData.html">Show All Students</a></span>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container mt-5">
+                    <h1 class="text-center text-dark-emphasis">Students Registration Form</h1>
+                    <form id="studentForm">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label"> First Name </label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div><div class="mb-3">
+                            <label for="lastName" class="form-label"> Last Name </label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div><div class="mb-3">
+                            <label for="roll" class="form-label"> Roll </label>
+                            <input type="number" class="form-control" id="roll" required>
+                        </div><div class="mb-3">
+                            <label for="stdClass" class="form-label"> Class </label>
+                            <input type="text" class="form-control" id="stdClass" required>
+                        </div><div class="mb-3">
+                            <label for="mobile" class="form-label"> Phone </label>
+                            <input type="tel" class="form-control" id="mobile" required>
+                        </div><div class="mb-3">
+                            <label for="email" class="form-label"> email </label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary"> Register </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
