@@ -7,8 +7,6 @@ class Students {
         this.mobile = mobile;
         this.email = email;
     }
-
-
 }
     function fetchStudents  (){
         const students = JSON.parse(localStorage.getItem('students')) || [];
@@ -39,14 +37,6 @@ function deleteStudent(index){
     localStorage.setItem("students", JSON.stringify(students));
     fetchStudents();
 
-
 }
-
-
-
-
-
-
-
 
     fetchStudents();
