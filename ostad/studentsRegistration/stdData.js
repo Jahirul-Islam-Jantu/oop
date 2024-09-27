@@ -23,7 +23,9 @@ class Students {
                 <td>${student.stdClass}</td>
                 <td>${student.mobile}</td>
                 <td>${student.email}</td>
-                <td class="btn btn-sm btn-outline-danger " onclick="deleteStudent(${index})">Delete</td>
+                <td class="btn btn-sm btn-outline-danger mx-2 " onclick="deleteStudent(${index})">Delete</td>
+                <td class="btn btn-sm btn-outline-warning  "><a href="${'./update.html?' + index}">Edit</a></td>
+                
             </tr>
         `
             studentTable.innerHTML += row ;
@@ -38,5 +40,6 @@ function deleteStudent(index){
     fetchStudents();
 
 }
+
 
     fetchStudents();

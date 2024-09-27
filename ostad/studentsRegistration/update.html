@@ -5,9 +5,71 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./bootstrap/bootstrap.bundle.js" defer></script>
+    <script src="./main.js" defer></script>
+    <title>Students Registration Form</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html">Students Registration System</a>
+        </div>
+        <div class="collapse navbar-collapse d-flex justify-content-between col-3 flex-nowrap " id="navbarText">
+            <span class="navbar-text ">
+                <a class="nav-link active" aria-current="page" href="index.html">Register Student</a>
+            </span>
+            <span class="navbar-text mx-2">
+                <a class="nav-link" href="allData.html">Show All Students</a>
+            </span>
+        </div>
+    </nav>
 
+    <div class="container mt-5">
+        <h1 class="text-center text-dark-emphasis">
+            Students Registration Form Update
+        </h1>
+        <form id="studentForm">
+            <div class="mb-3">
+                <label for="firstName" class="form-label"> Update First Name </label>
+                <input type="text"
+                       class="form-control"
+                       id="firstName"
+                       required />
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label"> Update Last Name </label>
+                <input type="text"
+                       class="form-control"
+                       id="lastName"
+                       required />
+            </div>
+            <div class="mb-3">
+                <label for="roll" class="form-label"> Update Roll </label>
+                <input type="number" class="form-control" id="roll" required />
+            </div>
+            <div class="mb-3">
+                <label for="stdClass" class="form-label"> Update Class </label>
+                <input type="text"
+                       class="form-control"
+                       id="stdClass"
+                       required />
+            </div>
+            <div class="mb-3">
+                <label for="mobile" class="form-label">Update Phone </label>
+                <input type="tel" class="form-control" id="mobile" required />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Update email </label>
+                <input type="email" class="form-control" id="email" required />
+            </div>
+            <button type="submit" class="btn btn-outline-secondary">
+                Update
+            </button>
+
+        </form>
+
+    </div>
 </body>
 </html>
