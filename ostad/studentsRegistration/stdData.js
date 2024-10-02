@@ -23,8 +23,9 @@ class Students {
                 <td>${student.stdClass}</td>
                 <td>${student.mobile}</td>
                 <td>${student.email}</td>
-                <td class="btn btn-sm btn-outline-danger mx-2 " onclick="deleteStudent(${index})">Delete</td>
-                <td><button onclick="updateItem(${index})">Update Item</button></td>
+                <td><button class="btn btn-sm btn-outline-danger mx-2 " onclick="deleteStudent(${index})">Delete Item</button></td>
+                <td><button class="btn btn-sm btn-outline-danger mx-2 " onclick="updateItem(${index})">Update Item</button></td>
+                
                 
             </tr>
         `
