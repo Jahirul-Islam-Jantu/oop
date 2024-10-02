@@ -24,7 +24,7 @@ class Students {
                 <td>${student.mobile}</td>
                 <td>${student.email}</td>
                 <td class="btn btn-sm btn-outline-danger mx-2 " onclick="deleteStudent(${index})">Delete</td>
-                <td class="btn btn-sm btn-outline-warning  "><a href="${'./update.html?' + index}">Edit</a></td>
+                <td><button onclick="updateItem(${index})">Update Item</button></td>
                 
             </tr>
         `
@@ -39,6 +39,10 @@ function deleteStudent(index){
     localStorage.setItem("students", JSON.stringify(students));
     fetchStudents();
 
+}
+
+function updateItem( index){
+    window.location = "update.html?index=" + index;
 }
 
 
